@@ -1,0 +1,238 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+}
+
+h2, h3 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.1em;
+    position: relative;
+    font-weight: 500;
+}
+
+p:first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+    line-height: 0.8;
+    color: #2a2a2a;
+}
+
+p:nth-child(odd) {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+p:nth-child(even) {
+    font-style: normal;
+    background-color: #fce4ec;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+p:hover {
+    background-color: #e1f5fe;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: mintcream;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+header {
+    background-color: #b0bec5;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.shrink {
+    padding: 10px 40px;
+}
+
+header.shrink h1 {
+    font-size: 1.8em;
+}
+
+.header-title {
+    flex: 1;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffab00;
+}
+
+.button-container {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #303f9f;
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-container img {
+    flex: 1 1 calc(33.333% - 10px);
+    transition: transform 0.3s ease;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #455a64;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.faq-section {
+    margin: 30px 0;
+}
+
+.faq-section h3 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.faq-section h3:hover {
+    background-color: #b2ebf2;
+}
+
+blockquote {
+    font-size: 1.1em;
+    font-style: italic;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-left: 5px solid #0073e6;
+    margin: 20px 0;
+    color: #555;
+}
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    list-style: square;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes textColorChange {
+    0% { color: #ffffff; }
+    50% { color: #00ccff; }
+    100% { color: #ffffff; }
+}
