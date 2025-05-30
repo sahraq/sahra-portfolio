@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Stories - FGM Crisis in Somalia</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onscroll = function() {
+            shrinkHeader();
+        };
+
+        function shrinkHeader() {
+            const header = document.querySelector('header');
+            const nav = document.querySelector('nav ul');
+            
+            if (window.scrollY > 20) {  
+                header.classList.add('shrink');
+                nav.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+                nav.classList.remove('shrink');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Surviving FGM</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">More</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/UKT1MX-RnmU?si=YEiWhzF8_vfKryvp" title="YouTube video player" frameborder="10" allowfullscreen></iframe>
+            </div>
+
+            <h2>Dr. Leyla Hussein's Story</h2>
+            <p>
+                Dr. Leyla Hussein, a psychotherapist and FGM survivor, underwent female genital mutilation at the age of seven. She recounts the traumatic experience of being held down and cut, leading to severe psychological and emotional repercussions. Despite living in the UK since the age of 12, it wasn't until a nurse asked her about FGM during a routine check-up that she realized the connection between her past and her health struggles. This moment inspired her to become an activist against FGM and advocate for survivors through her organization, The Dahlia Project. Dr. Hussein's journey highlights the importance of awareness and support for those affected by this harmful practice.
+            </p>
+            <p>
+                Today, she works tirelessly to raise awareness and provide therapeutic support for FGM survivors, emphasizing the need for medical professionals to understand the implications of FGM on their patients.
+            </p>
+
+            <h2>Survivor Stories</h2>
+            <blockquote>
+                "My life changed forever when I underwent FGM at a young age." – Dr. Leyla Hussein
+            </blockquote>
+            <blockquote>
+                "I lost part of my identity and my freedom." – Amina, Survivor
+            </blockquote>
+            <blockquote>
+                "FGM is a practice that we need to stop for the sake of our daughters." – Fatima, Activist
+            </blockquote>
+        </main>
+        <div class="button-container">
+            <button onclick="location.href='resources.html'">Ending FGM</button>
+        </div>
+    </div>
+
+   <script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) { // Change this value to adjust when the effect occurs
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    });
+</script>
+
+</body>
+</html>
