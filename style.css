@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Helvetica', monospace;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -66,7 +66,7 @@ p:hover {
 }
 
 header {
-    background-color: #b0bec5;
+    background-color:#edc9af;
     padding: 20px 40px;
     display: flex;
     align-items: center;
